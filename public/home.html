@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link href ="public_url/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -26,36 +25,34 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-</head>
-<body>
-    <div class="container ">
-        <div class="row">
-             <div class="col-3" id="banner"></div>
-             <div class="col-9">
-                <h2>My cool Restuarant</h2>
-             </div>
-        </div>
-        <div class="row" id="category">
-               Food category will be here 
-              
-        </div>
-        <div class="row" id="aboutus">
-            <div class="col">
-                 <p>you are welcome to nour restuarant</p>
-                 <p>you are welcome to nour restuarant</p>
-                 <p>you are welcome to nour restuarant</p>
-                 <p>you are welcome to nour restuarant</p>
-
-            </div>
-            <div class="col" id="forms">
-
-            </div>
-        </div>
-            <div class="row" id="footer">
-                <div class="col text-center">
-                    <p>developed by me &copy 2022</p>
-                </div>
-            </div>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">class ShoppingList extends React.Component {
+      render() {
+        return (
+          <div className="shopping-list">
+            <h1>Shopping List for {this.props.name}</h1>
+            <ul>
+              <li>Instagram</li>
+              <li>WhatsApp</li>
+              <li>Oculus</li>
+            </ul>
+          </div>
+        );
+      }
+    }
+    
     </div>
-</body>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
